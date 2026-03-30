@@ -258,12 +258,7 @@
                             <span class="hide-menu">Home</span>
                         </li>
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="{{ route('admin.dashboard') }}">
-                                <i class="ti ti-atom"></i>
-                                <span class="hide-menu">Dashboard</span>
-                            </a>
-                        </li>
+
 
                         <li class="sidebar-item">
                             <a class="sidebar-link {{ request()->is('food*') ? 'active' : '' }}"
@@ -274,36 +269,7 @@
                         </li>
 
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link {{ request()->is('food-category*') ? 'active' : '' }}"
-                                href="{{ route('Food_Category.index') }}">
-                                <i class="ti ti-book"></i>
-                                <span class="hide-menu">Food Category</span>
-                            </a>
-                        </li>
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link {{ request()->is('admin/peminjaman-approval*') ? 'active' : '' }}"
-                                href="{{ route('peminjaman.approval') }}">
-                                <i class="fa-solid fa-check-double"></i>
-                                <span class="hide-menu">Approval Peminjaman</span>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link {{ request()->is('admin/peminjaman-return*') ? 'active' : '' }}"
-                                href="{{ route('peminjaman.return') }}">
-                                <i class="fa-solid fa-undo"></i>
-                                <span class="hide-menu">Approval Pengembalian</span>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link {{ request()->is('anggota*') ? 'active' : '' }}"
-                                href="{{ route('anggota.index') }}">
-                                <i class="ti ti-book"></i>
-                                <span class="hide-menu">Anggota</span>
-                            </a>
                         </li>
 
 
