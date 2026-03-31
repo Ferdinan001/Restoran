@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Food;
-use illuminate\http\request;
-use illuminate\support\Facades\validator;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 
 class FoodController extends Controller
@@ -69,7 +69,6 @@ class FoodController extends Controller
             'message' => 'Food created successfully',
             'data' => $food
         ], 201);
-
     }
 
     /**
